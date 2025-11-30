@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    background-color: #ef76cb;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+main {
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+}
+
+/* PASSOS (TELAS) */
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+
+
+/* TEXTO */
+.passo p {
+   text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 90px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* BOTÕES */
+button {
+    background-color: #c27af1;
+    color: rgb(0, 0, 0);
+    font-family: "Bai Jamjuree", sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #9a4fcb;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+    .passo p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
